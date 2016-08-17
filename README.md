@@ -23,3 +23,13 @@ get_absolute_path() {
     echo "${DIR}"
 }
 ```
+
+## Celery
+
+How should I start the Celery worker process for a Django project in the development environment?
+```shell
+# $PROJECT_DIRECTORY is the absolute path for the Django project
+# (same path with the manage.py file)
+cd $PROJECT_DIRECTORY
+celery -A $PROJECT_NAME worker -l info
+```
