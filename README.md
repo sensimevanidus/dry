@@ -24,6 +24,20 @@ get_absolute_path() {
 }
 ```
 
+## Byobu
+
+### Byobu with tmux back end
+
+How can I start a new Byobu session with a specified name?
+```shell
+byobu new -s <session-name>
+````
+
+How can I rename an existing Byobu session?
+```shell
+byobu rename -t <session-name> <new-session-name>
+```
+
 ## Celery
 
 How should I start the Celery worker process for a Django project in the development environment?
