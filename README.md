@@ -24,6 +24,11 @@ get_absolute_path() {
 }
 ```
 
+How can I redirect `stdout` and `stderr` to a file?
+```shell
+$command > $redirectedFilePath 2>&1 
+```
+
 ## Byobu
 
 ### Byobu with tmux back end
