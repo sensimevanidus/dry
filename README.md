@@ -29,6 +29,12 @@ How can I redirect `stdout` and `stderr` to a file?
 $command > $redirectedFilePath 2>&1 
 ```
 
+How can I get the PID (process ID) of a process I run in detached mode?
+```shell
+python example.py &
+PID_OF_COMMAND=$!
+```
+
 ## Byobu
 
 ### Byobu with tmux back end
