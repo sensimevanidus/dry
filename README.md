@@ -35,6 +35,26 @@ python example.py &
 PID_OF_COMMAND=$!
 ```
 
+How can I wait for the user confirm whether he/she wants the script to continue executing or not?
+```shell
+confirm_to_continue() {
+        message=$1
+
+        while true; do
+                read -p "${message}" answer
+
+                case $answer in
+                [yY]* ) break;;
+
+                [nN]* ) echo "Quiting"
+                        exit;;
+
+                * ) echo "Enter y or n, please.";;
+                esac
+        done
+}
+```
+
 ## Byobu
 
 ### Byobu with tmux back end
