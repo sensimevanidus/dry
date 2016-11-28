@@ -55,6 +55,11 @@ confirm_to_continue() {
 }
 ```
 
+How can I get a list of the largest top 10 files and directories under the current directory?
+```shell
+du -hsx * | sort -rh | head -10
+```
+
 ## Byobu
 
 ### Byobu with tmux back end
