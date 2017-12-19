@@ -65,6 +65,12 @@ How can I generate a random number between 1 and 10?
 NUM=$(( ( RANDOM % 10 ) + 1 ))
 ```
 
+How can I get the length of an array defined in bash?
+```shell
+my_array=(1 2 3)
+length_of_array=${#my_array[@]}
+```
+
 ## Byobu
 
 ### Byobu with tmux back end
