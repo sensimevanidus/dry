@@ -60,6 +60,11 @@ How can I get a list of the largest top 10 files and directories under the curre
 du -hsx * | sort -rh | head -10
 ```
 
+How can I generate a random number between 1 and 10?
+```shell
+NUM=$(( ( RANDOM % 10 ) + 1 ))
+```
+
 ## Byobu
 
 ### Byobu with tmux back end
