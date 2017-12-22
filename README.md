@@ -71,6 +71,11 @@ my_array=(1 2 3)
 length_of_array=${#my_array[@]}
 ```
 
+How can I get the number of cores (in MacOSX)?
+```shell
+sysctl -n hw.ncpu
+```
+
 ## Byobu
 
 ### Byobu with tmux back end
