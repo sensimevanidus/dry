@@ -76,6 +76,11 @@ How can I get the number of cores (in MacOSX)?
 sysctl -n hw.ncpu
 ```
 
+How can I get the list of most recently modified 50 files under the current directory (recursively)?
+```shell
+find . -type f -print0 | xargs -0 stat --format '%Y :%y %n' | sort -nr | cut -d: -f2- | head -n 50
+```
+
 ## Byobu
 
 ### Byobu with tmux back end
