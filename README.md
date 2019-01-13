@@ -110,7 +110,7 @@ cd $PROJECT_DIRECTORY
 celery -A $PROJECT_NAME worker -l info
 ```
 
-## Github
+## GitHub
 
 How can I change the author information on a project historically?
-- Refer to [Github's documentation](https://help.github.com/articles/changing-author-info/).
+- Refer to [GitHub's documentation](https://help.github.com/articles/changing-author-info/).
