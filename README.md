@@ -109,3 +109,8 @@ How should I start the Celery worker process for a Django project in the develop
 cd $PROJECT_DIRECTORY
 celery -A $PROJECT_NAME worker -l info
 ```
+
+## Github
+
+How can I change the author information on a project historically?
+- Refer to [Github's documentation](https://help.github.com/articles/changing-author-info/).
