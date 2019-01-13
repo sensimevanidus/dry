@@ -81,6 +81,11 @@ How can I get the list of most recently modified 50 files under the current dire
 find . -type f -print0 | xargs -0 stat --format '%Y :%y %n' | sort -nr | cut -d: -f2- | head -n 50
 ```
 
+How can I make my Linux system set the hardware clock to "local" time (in order to fix system time conflicts for my dual-boot setup)?
+```shell
+timedatectl set-local-rtc 1
+```
+
 ## Byobu
 
 ### Byobu with tmux back end
